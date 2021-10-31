@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/css/foundation-float.min.css"
+      integrity="sha512-4D+CMcbKorl8zoKaFdYXQKa0O2/bvi1+be0y6nqg9xlKA7XszD7Az8lDIMN0731sJRxTLZcM61qpv0Da5QzPOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <form class="form"  id="loginForm">
+        <div class="form__login">
+          <label for="login">Login</label>
+          <input type="text" name="email" id="email" required="required"  />
+          <span id="validationText"></span>
+        </div>
+        <div class="form__pass">
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="password" required="required"  />
+        </div>
+        <input type="submit" id="submit" value="login" disabled="disabled" />
+      </form>
+      <span id="text"></span>
+    </main>
+    <script src="/Hillel - ДЗ 11. Форма логина (Dom Events)/script.js"></script>
+  </body>
+</html>
+
+<style>
+  .form {
+   max-width: 500px;
+   margin: auto;
+  }
+  .form__login input,
+  .form__pass input {
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  #text{
+    display: block;
+    text-align: center;
+    margin-top: 35px;
+  }
+</style>
